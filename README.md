@@ -8,3 +8,12 @@ Please, submit the result to a GitHub, GitLab, or Bitbucket repository and send 
 
 Note: To develop this application you need to consider the past rules of the Pico&Placa. (Hours: 7:00am - 9:30am / 16:00pm - 19:30). Additional research would be needed to complete the exercise.
 
+Reglas del Pico y placa
+
+Lunes 1 y 2
+Martes 3 y 4
+Miercoles 5 y 6
+Jueves 7 y 8
+Viernes 9 y 0 
+Domingo ninguno
+Horaio de Pico y placa: 07-09:30 y 16-19:30
