@@ -1,19 +1,60 @@
-Using the language that you feel most proficient in, we’d like you to write a "Pico y Placa" predictor. The inputs should be a license plate number (the full number, not the last digit), a date (as a String), and a time, and the program will return whether or not that car can be on the road. You may use any input and output method you prefer. Although it is not required, we’d love to see the following in your code for extra points:
+# Pico y Placa, License Plate number predictor for traffic in peak hours
 
-Good object-oriented code, avoiding repetition and favoring a consistent organization. You should stick to your chosen language’s semantics, and try to be as consistent as possible.
-Correct usage of version control tools, with a good commit history and incremental software delivery practices.
-Automated testing with any framework or tool of your choice.
-We value candidates that love clean, well-structured code, and that can solve problems in a creative way.
-Please, submit the result to a GitHub, GitLab, or Bitbucket repository and send us the URL within a timeframe of 72 hours. Once we receive this information we’ll ask our technical team to review it and we’ll let you know about the next steps of the process.
 
-Note: To develop this application you need to consider the past rules of the Pico&Placa. (Hours: 7:00am - 9:30am / 16:00pm - 19:30). Additional research would be needed to complete the exercise.
 
-Reglas del Pico y placa
+### Description:
+Using the language that you feel most proficient in, we’d like you to write a "Pico y Placa" predictor. The inputs should be a license plate number (the full number, not the last digit), a date (as a String), and a time, and the program will return whether or not that car can be on the road. You may use any input and output method you prefer. 
 
-Lunes 1 y 2
-Martes 3 y 4
-Miercoles 5 y 6
-Jueves 7 y 8
-Viernes 9 y 0 
-Domingo ninguno
-Horaio de Pico y placa: 07-09:30 y 16-19:30
+### Peak hour rules:
+
+Within a specified city, you can not drive (car or motorcicle) during the peak hours (07:00 - 09:30 and 16:00 - 19:30) if your
+vehicule's last digit is blacklisted for the day.
+
+
+| Day               | Black Digits |
+|-------------------|--------------|
+| Monday            | 1 - 2        |
+| Tuesday           | 3 - 4        |
+| Wednesday         | 5 - 6        |
+| Thursday          | 7 - 8        |
+| Friday            | 9 - 0        |
+| Saturday & Sunday | None         |
+
+### Solution Description:
+
+This project have been develop with Python3.8 using a web framework to use as input method.
+
+##### How to run:
+
+- Download the project and enter.
+~~~
+git clone https://github.com/fnando1995/SBProj.git
+cd SBProj
+~~~
+
+- Create a virtual environment and install dependencies. (Python3 must be installed in you Computer).
+~~~
+python3 -m venv env
+source env/bin/activate
+pip install -r requirements           #dependencies
+~~~
+
+- Run development server
+~~~
+python manage.py runserver
+~~~
+
+- Check the link: 127.0.0.1/picoyplaca/
+
+You can enter the license plate number (7 alphanumeric characters), and the date and time in the datepicker. Finally you can submit with the "Consult" buttom.
+
+After consulting, the application will erase the information for a new consult, leaving the result of the last consult as a message with a colored background.
+
+###### Note: Images are in web mobile.
+
+![Image1](statics/1.png) ![Image2](statics/2.png) ![Image3](statics/3.png)
+
+
+### Production:
+
+For production deployment contact developer: @fnando1995 ;)
