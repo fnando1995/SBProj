@@ -19,20 +19,20 @@
         <div class="container">
             <br> </br>
             <br> </br>
-            <h3 style="text-align: center;">Sistema de Prediccion "Pico y Placa"</h3>
+            <h3 style="text-align: center;">Prediction System "Pico y Placa"</h3>
             <form method="POST">
                 {% csrf_token %}
 
                 <br> </br>
-                <label>Ingrese Placa</label>
+                <label>License Plata</label>
                 {{ form.placa }}
 
                 <br> </br>
-                <label>Seleccione Fecha y Hora:</label>
+                <label>Select date and time:</label>
                 <input type="datetime-local" class="form-control datetimepicker-input" id="datetimepicker1" name="DateTimeField"/>
 
                 <br> </br>
-                <button type="submit" class="btn btn-primary">Consultar</button>
+                <button type="submit" class="btn btn-primary">Consult</button>
 
             </form>
         </div>
@@ -40,10 +40,10 @@
         {% if message %}
             <div class="container">
                 <br> </br>
-                {% if result == 1 %}
+                {% if result == 0 %}
                     <p style="text-align: center; background-color: red;"> {{ message }} </p>
                 {% else %}
-                    <p style="text-align: center; background-color: blue"> {{ message }} </p>
+                    <p style="text-align: center; background-color: aqua;"> {{ message }} </p>
                 {% endif %}
             </div>
         {% endif  %}
